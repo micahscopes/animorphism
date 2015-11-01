@@ -1,8 +1,7 @@
 # Animorphism
-This is a play on the idea of isomorphism and the Animorphs books, which I
-read when I was a little kid.  I wanted something to quickly map some data
-from one library to another, transform it, then map it back
-without having to worry about redundant code.
+This is a play on the idea of (iso)morphism and Animorphs.  I wanted something 
+to quickly map some data from one library to another, transform it, then map it
+back without having to worry about redundant code messes.
 
 Setup:
 ```javascript
