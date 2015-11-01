@@ -1,8 +1,8 @@
 # Animorphism
 This is a play on the idea of isomorphism and the Animorphs books, which I
 read when I was a little kid.  I wanted something to quickly map some data
-from one library to another, do some stuff, then transform it back again
-without having to worry about keeping a bunch of redundant objects around.
+from one library to another, transform it, then map it back
+without having to worry about redundant code.
 
 Setup:
 ```javascript
@@ -10,7 +10,7 @@ import Animorphism from './animorphism';
 
 // we describe the morphism, an animorphism
 let toCow = (person) => person.morphInto('cow');
-let toHuman = (cow,pastSelf) => cow.morphBackTo(pastSelf);
+let toHuman = (cow,oldSelf) => cow.morphBackTo(oldSelf);
 let asCow = new Animorphism(toCow,toHuman);
 ```
 Now, if you'll recall from the Animorphs books, benevolent aliens gave some kids
@@ -21,5 +21,5 @@ let doMission = asCow.do(bovineTask);
 // NOW WE ARE READY:
 let you = new Human();
 doMission(you);
-alert(you.isHuman()); // => true, (whew!)
+alert(you.isStillHuman()); // => true, (whew!)
 ```
