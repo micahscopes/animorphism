@@ -1,5 +1,5 @@
 # Animorphism
-This is a play on the idea of (iso)morphism and Animorphs.  I wanted something 
+This is a play on the idea of (homo)morphism and Animorphs.  I wanted something 
 to quickly map some data from one library to another, transform it, then map it
 back without having to worry about redundant code messes.
 
