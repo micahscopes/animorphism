@@ -12,8 +12,9 @@ let toCow = (person) => person.morphInto('cow');
 let toHuman = (cow,oldSelf) => cow.morphBackTo(oldSelf);
 let asCow = new Animorphism(toCow,toHuman);
 ```
-Now, if you'll recall from the Animorphs books, benevolent aliens gave some kids
-one or more critical missions to accomplish when they were in animal form:
+Now, if you'll recall from the Animorphs books, benevolent aliens gave some youth the ability to transform into animal form.  The youth had critical missions to accomplish, as malevolent aliens were trying to take over the world and turn people into slug creatures.  The only danger was that if they stayed in animal form too long, the youth could get stuck there.  So it was important for them to accomplish their task, then morph back into humans before they got stuck
+
+In our example, we will transform into a cow, chew cud, then transform back into a human as soon as possible:
 ```javascript
 let bovineTask = (cow) => cow.chew(cud);
 let doMission = asCow.do(bovineTask);
